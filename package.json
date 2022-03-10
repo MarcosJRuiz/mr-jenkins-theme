@@ -1,0 +1,39 @@
+{
+  "name": "mr-jenkins-theme",
+  "version": "0.3.0",
+  "description": "A custom and modern theme for Jenkins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcosJRuiz/mr-jenkins-theme"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "keywords": [
+    "modern theme",
+    "clean design",
+    "jenkins"
+  ],
+  "author": "Marcos Ruiz",
+  "contributors": [
+    "Marcos Ruiz"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@lodder/grunt-postcss": "^3.1.1",
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.17",
+    "grunt": "^1.4.1",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-less": "^3.0.0",
+    "jenkins-core-theme": "MarcosJRuiz/mr-jenkins-core",
+    "load-grunt-tasks": "^5.1.0",
+    "postcss": "^8.4.6"
+  },
+  "dependencies": {
+    "yarn": "^1.22.17"
+  },
+  "browserslist": [
+    "last 1 versions"
+  ]
+}

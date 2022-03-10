@@ -1,0 +1,284 @@
+@import '../node_modules/jenkins-core-theme/less/functions';
+@import '../node_modules/jenkins-core-theme/less/images';
+@import '../node_modules/jenkins-core-theme/less/codemirror';
+@import 'variables';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+// Only match the same elements which are also present in Jenkins' style.css
+body, table, form, input, td, th, p, textarea, select {
+  font-family: @font-primary, sans-serif;
+}
+
+body, table, form, td, th, p {
+  color: @color-text !important;
+  font-size: 14px !important;
+}
+
+a, a:visited, a:link {
+  text-decoration: none !important;
+  color: @color-link;
+}
+
+a:hover {
+  text-decoration: underline !important;
+  color: @color-button-hover !important;
+}
+
+h2 {
+    margin-top: 1.75rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: normal;
+}
+
+#header {
+  background-color: @color-primary;
+  letter-spacing: 1px;
+
+  .login {
+    text-transform: uppercase;
+    a {
+      font-size: 10px;
+    }
+    a:hover {
+      color: @color-white !important;
+    }
+  }
+
+  #search-box {
+    background: darken(@color-primary, 10%);
+    padding-left: 0.5rem;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: none;
+    color: @color-white;
+  }
+
+  .main-search__icon-leading {
+    display: none;
+  }
+}
+
+#breadcrumbs li:hover,
+A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
+  background-color: transparent !important;
+}
+
+#notification-bar {
+  height: 3.5rem !important;
+}
+
+#executors .pane-content > table tr td:first-child {
+  color: #aaa !important;
+  font-weight: bold;
+  font-size: 1.3em !important;
+  text-align: center;
+}
+
+.pane-frame {
+  border: 0;
+
+  &:hover, &.mouseover {
+    border: 0 !important;
+  }
+
+ .pane-header, .pane-footer {
+  background: @color-bg;
+  margin-bottom: 5px;
+  border-radius: 0;
+  border: 0;
+ }
+
+ .pane-header {
+  border-bottom: 2px solid @color-accent-light;
+ }
+
+ .single-line:hover, .single-line.model-link-active {
+  background: @color-accent-light !important;
+ }
+}
+
+table.stripped-odd tr:nth-child(odd) {
+  background: darken(@color-bg, 2%);
+}
+
+#buildHistoryPage {
+  .build-search-row {
+    td {
+      padding: 0;
+    }
+  }
+
+  .build-row {
+    &.model-link-active {
+      background-color: @color-accent-light !important;
+    }
+  }
+}
+
+footer {
+  padding: 5px 0;
+  background-color: @color-footer-bg;
+  border: 0;
+}
+
+#management-links {
+  padding-left: 0 !important;
+  a {
+    margin-right: 10px; 
+    font-weight: 600;
+  }
+  tr {
+    display: block;
+    margin: 10px 0;
+  }
+  td div {
+    color: #333 !important;
+  }
+}
+
+th.pane {
+  background-color: transparent;
+}
+
+#side-panel .task-link {
+  color: @color-text;
+}
+
+.bottom-sticker-edge {
+  display: none
+}
+
+.bottom-sticker-inner {
+  margin: 0 0 0 -15px;
+  padding-left: 15px;
+  background: none repeat scroll 0 0 @color-sticker-bg !important;
+}
+
+a#jenkins-home-link {
+  opacity: 1 !important;
+}
+
+table.progress-bar.red td.progress-bar-done {
+  background-color: @color-red !important;
+  border-color: @color-red !important;
+}
+
+td.progress-bar-done {
+  background-color: @color-green !important;
+  border-color: @color-green !important;
+}
+
+td.progress-bar-left {
+  border: none !important;
+  background-color: #ccc !important;
+}
+
+table.progress-bar {
+  border-color: transparent !important;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.ygtvlabel,
+.ygtvlabel:link,
+.ygtvlabel:visited,
+.ygtvlabel:hover {
+  background-color: transparent !important
+}
+
+.yuimenuitemlabel {
+  outline: none;
+}
+
+#main-panel-content > div:nth-child(2) {
+  background-color: transparent !important
+}
+
+#jenkins .yui-button {
+  button {
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .1s ease-out;
+    cursor: pointer;
+    border: none !important;
+    border-radius: 3px;
+    display: inline-block;
+    height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+  }
+  &.primary button {
+    color: @color-white !important;
+    background-color: @color-button !important;
+
+    &:hover {
+      background-color: @color-button-hover !important;
+    }
+    &:active {
+      color: @color-black !important;
+      background-color: @color-button-active !important;
+      box-shadow: none;
+    }
+  }
+}
+
+#enable-project .yui-button {
+  vertical-align: middle;
+}
+
+.console-output {
+  position: relative;
+  font-family: @font-console, monospace !important;
+  background: @console-black;
+  color: @console-white;
+  cursor: text;
+  padding: 10px 20px;
+  a {
+    color: @console-white;
+    font-weight: bold;
+  }
+  div.collapseHeader {
+    background-color: @console-white;
+    color: @console-black;
+  }
+  div.collapseAction p {
+    color: @console-white !important;
+  }
+}
+
+.ace_editor, .ace_editor * {
+  font-family:  @font-console, monospace !important;
+}
+
+.jenkins_ver:after {
+  margin-left: 15px;
+  content: 'Theme Marcos Ruiz'
+//  content: 'Theme Marcos Ruiz @{version}'
+}
+
+[style^="color:gray"] {
+  color: @color-grey !important;
+}
+
+[style^="color:red"] {
+  color: @color-red !important;
+}
+
+// make headings on the config pages easier to read
+.section-header {
+    font-size: 2em !important;
+    border-bottom: none !important;
+    font-weight: lighter !important;
+    margin-top: 2rem !important;
+}
+
