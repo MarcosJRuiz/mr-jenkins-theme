@@ -7,3 +7,4 @@
 /node_modules/
 /package-lock.json
 /yarn.lock
+!/node_modules/jenkins-core-theme/less/

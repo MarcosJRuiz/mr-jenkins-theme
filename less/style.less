@@ -36,23 +36,27 @@ h3 {
 }
 
 #header {
-  background-color: @color-primary;
+//   background-color: @color-primary;
+ background: linear-gradient(to right, rgba(10,255,202,0.4), rgba(201,255,21,0.4));
   letter-spacing: 1px;
 
   .login {
     text-transform: uppercase;
     a {
       font-size: 10px;
+      color: @color-black
     }
     a:hover {
       color: @color-white !important;
+      background: @color-lighterpurple;
+      border-radius: 15px;
     }
   }
 
   #search-box {
-    background: darken(@color-primary, 10%);
-    padding-left: 0.5rem;
-    border-radius: 3px;
+    background: @color-lighterpurple;
+    padding-left: 1.1rem;
+    border-radius: 15px;
     border: 0;
     box-shadow: none;
     color: @color-white;
@@ -282,3 +286,13 @@ td {
     margin-top: 2rem !important;
 }
 
+// logo da barra
+#jenkins-home-link{
+    width: 150px;
+    height: 40px;
+    padding: 3px;
+    background: url(https://www.sysmap.com.br/img/logo_sysmap.svg);
+    background-repeat: no-repeat;
+}
+#jenkins-head-icon { display: none; }
+#jenkins-name-icon { display: none; }
