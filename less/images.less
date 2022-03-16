@@ -177,12 +177,16 @@
   .icon-img('refresh.svg', @color-grey);
 }
 
-.icon-computer, [src$='computer.png'] {
-  .icon-img('computer.svg', @color-grey);
-}
+//-------------------------------------------------------------------------
+// Replacement side-painel > executors
+//-------------------------------------------------------------------------
+
+// .icon-computer, [src$='computer.png'] {
+//   .icon-img('computer.svg', @color-grey);
+// }
 
 .icon-computer-x {
-  .icon-img('computer_offline.svg', @color-grey);
+  .icon-img('computer_offline.svg', @color-red);
 }
 
 .icon-new-computer {
@@ -295,12 +299,12 @@
   .icon-img('assignment_late.svg', @color-grey);
 }
 
-[src$='analysis-24x24.png'], [src$='analysis-48x48.png'], 
-[src$='go-24x24.png'], [src$='go-48x48.png'], 
-[src$='idea-24x24.png'], [src$='idea-48x48.png'], 
-[src$='java-24x24.png'], [src$='java-48x48.png'], 
-[src$='resharper-24x24.png'], [src$='resharper-48x48.png'], 
-[src$='scala-24x24.png'], [src$='scala-48x48.png'], 
+[src$='analysis-24x24.png'], [src$='analysis-48x48.png'],
+[src$='go-24x24.png'], [src$='go-48x48.png'],
+[src$='idea-24x24.png'], [src$='idea-48x48.png'],
+[src$='java-24x24.png'], [src$='java-48x48.png'],
+[src$='resharper-24x24.png'], [src$='resharper-48x48.png'],
+[src$='scala-24x24.png'], [src$='scala-48x48.png'],
 [src$='warnings-24x24.png'], [src$='warnings-48x48.png'] {
   .icon-img('warning.svg', @color-grey);
 }
@@ -310,11 +314,6 @@
     filter: brightness(10000);
   }
 }
-
-
-
-
-
 
 // Animations
 
@@ -334,9 +333,6 @@
 .icon-aborted-anime {
   .animate-rotate();
 }
-
-
-
 
 // Hacks
 
